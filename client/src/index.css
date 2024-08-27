@@ -1,0 +1,133 @@
+:root {
+  --bg-color: rgb(244, 237, 227);
+  --text-color: rgb(15,15,15);
+  --primary-color: #4c07de;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+  box-sizing: border-box;
+  font-family: 'Inter';
+  font-weight: 500;
+}
+.home {
+  background-color:var(--bg-color) ;
+  padding-top: 1.5rem;
+  display: flex;
+  min-height: 200vh;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background-color:var(--bg-color) ;
+}
+.navbar ul {
+  display: flex;
+  align-items: center;
+}
+.navbar a {
+  margin: 0 24px;
+  color: var(--text-color);
+}
+.navbar a:nth-of-type(1){
+  margin-left: 0;
+}
+a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: rgb(239, 236, 229);
+}
+.btn {
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 1.1rem;
+  border-radius: 1rem;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  border: none;
+  padding: 0.9rem 1.5rem;
+  cursor: pointer;
+}
+.title { 
+  font-family: "Montserrat", sans-serif;
+  font-size: 5rem;
+  font-weight: 900;
+}
+.btn-container {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+.home .info {
+  /* flex: 1; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+/* .home .images-container {
+  position: absolute;
+} */
+.info .text {
+  margin-top: 1rem;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  transition: all 0.25s ease;
+}
+@keyframes moveRow {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(60px);
+  }
+}
+@keyframes moveRow2 {
+  from {
+    transform: translateX(60px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+.row {
+  /* transform: translateX(60px); */
+  /* animation: 1s moveRow 0.1s ease backwards; */
+}
+.row:nth-of-type(2) {
+  /* animation: 1s moveRow2 0.1s ease forwards; */
+}
+.images-container {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+}
+.img-container {
+  /* transform: translateX(50px); */
+  border-radius: 1rem;
+  width: 200px;
+  height: 110px;
+  object-fit: contain;
+  overflow: hidden;
+  box-shadow: 0 0 10px #bebebe;
+}
+.img-container img {
+  border-radius: 1rem;
+  width: 100%;
+}
+.text {
+  font-size: 1.25rem;
+}
+.container {
+  padding-left: 5%;
+  padding-right: 5%;
+}
