@@ -7,7 +7,7 @@ const Navbar = () => {
       <ul>
         <Link to='/'>Начало</Link>
         <Link to='/'>За Нас</Link>
-        <Link to='/'>Programme 2024/2025</Link>
+        <Link to='/'>Кастинг 2024/2025</Link>
         <Link to='/'>Преподаватли</Link>
         <Link to='/'>Събития</Link>
         <Link to='/'>Галерия</Link>

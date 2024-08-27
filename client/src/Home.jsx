@@ -13,13 +13,14 @@ const Home = () => {
   return (
     <div className='home container'>
       <article className="info">
-        <h1 className='title'>Школа Визион</h1>
-        <h1 className='title'> Школа</h1>
-        <p className='text'>Най-ценното откритие е да намериш необикновеното в обикновеното!</p>
-        <div className="btn-container">
+      <h1 className='title title-anim'>театрална</h1>
+      <h1 className='title title-anim'>школа</h1>
+      <h1 className='title'><span className='primary-c'>Визион</span></h1>
+        {/* <p className='text'>Най-ценното откритие е да намериш необикновеното в обикновеното!</p> */}
+        {/* <div className="btn-container">
           <button className="btn">Запиши се</button>
           <button className="btn">Научи Повече</button>
-        </div>
+        </div> */}
       </article>
       <div className="images-container">
         <div className="row">
