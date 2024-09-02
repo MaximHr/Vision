@@ -35,8 +35,11 @@ const Person = () => {
             <h1 className="l-text">
               Клара Армандова
             </h1>
-            <p>Amsterdam-based jeanmaker Denham believe in taking care of the finest details. From every roll of premium denim to every stitch of their jeans, it’s the small details that make their jeans renowned around the world.</p>
-            <p>Their e-commerce business is no different and after careful consideration Denham decided they wanted an improvement on their Salesforce Commerce Cloud website. The SFCC platform couldn’t give them the precision and the detail they were looking for.</p>
+            <p>Основател и Директор на Школа и импресарска къща ВИЗИОН ЕООД</p>
+            <p>MA Актьорско майсторство ВИТИЗ</p>
+            <p>Магистър по Театър и Педагогика (University of Leeds)</p>
+            <p>Доктор на Философските Науки (University of Reading)</p>
+            <a href='../public/cv1.doc' download='CV_Klara_Armandova' className="btn btn-hero btn-cv btn-outline">Изтегли CV</a>
           </div>
           <div className="person-img" style={{backgroundColor: '#007cbe'}} >
             <img src={klara} alt="Klara Armandova" />
@@ -50,8 +53,10 @@ const Person = () => {
             <h1 className="l-text">
               Десислава Николова
             </h1>
-            <p>Amsterdam-based jeanmaker Denham believe in taking care of the finest details. From every roll of premium denim to every stitch of their jeans, it’s the small details that make their jeans renowned around the world.</p>
-            <p>Their e-commerce business is no different and after careful consideration Denham decided they wanted an improvement on their Salesforce Commerce Cloud website. The SFCC platform couldn’t give them the precision and the detail they were looking for.</p>
+            <p>Завършва държавно Хореогравско Училище отдел класически танци.  </p>
+            <p>работи в ДМТ"Стефан Македонски" като артист-балерина,където и до днес участва активно в репертоара на театъра и изпълнява роли в Царицата на Чардаша, Веселата вдовица, Графина Марица, Котки, Моята прекрасна лейди, Чикаго, Мулен Руж, Някой го предпочитат горещо, Евита, Исус Христос супер звезда, Йосиф и неговата пъстра дреха, Зоро и много други. </p>
+            
+            <a href='../public/cv2.doc' download='CV_Desislava_Nikolova' className="btn btn-hero btn-cv btn-outline">Изтегли CV</a>
           </div>
           <div className="person-img"  style={{backgroundColor: '#00af54'}}>
             <img src={desislava} alt="Desislava Nikolova"/>
@@ -65,8 +70,13 @@ const Person = () => {
             <h1 className="l-text">
               Величко Руменчев
             </h1>
-            <p>Amsterdam-based jeanmaker Denham believe in taking care of the finest details. From every roll of premium denim to every stitch of their jeans, it’s the small details that make their jeans renowned around the world.</p>
-            <p>Their e-commerce business is no different and after careful consideration Denham decided they wanted an improvement on their Salesforce Commerce Cloud website. The SFCC platform couldn’t give them the precision and the detail they were looking for.</p>
+            <p>Научно звание:  Проф.дфн  в катедра „Реторика”, Философски факултет на СУ „Св. Климент Охридски” от февруари 1979 г.</p>
+            <p>Образование и професионална квалификация:<br/>
+- Висше юридическо  - в  Юридически факултет на СУ „Свети Климент Охридски” – 1977 г.<br/>
+ - Доктор по  право -  ДИПЛОМА на ВАК <br/> - Професор по реторика - ДИПЛОМА  на ВАК  
+</p>
+            
+            <a href='../public/cv3.doc' download='CV_Velichko_Rumenchev' className="btn btn-hero btn-cv btn-outline">Изтегли CV</a>
           </div>
           <div className="person-img">
             <img src={velichko} alt="Величко Руменчев" />

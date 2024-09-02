@@ -2,7 +2,7 @@ import React, {useRef, useState} from 'react';
 import { motion, useInView } from 'framer-motion';
 import about_us from './assets/about_us.jpg';
 import { Link } from 'react-router-dom';
-import klara from './assets/pic6.jpg';
+import stoinov from './assets/stoinov.jpg';
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 
@@ -55,8 +55,10 @@ const About = () => {
           <div className="box"  style={isInView ? {opacity: 1} : {opacity: 0}}>
             <h2>Виж какво ще научиш</h2>
             <ul>
-              <li>Курсове по Актьорско майсторство и Театрално изкуство</li>
-              <li>Уроци и Курсове по Режисура и сценарий</li>
+              <li>Актьорско майсторство</li>
+              <li>Презентерски умения</li>
+              <li>Сценаристика</li>
+              <li>Драматургия и общество</li>
             </ul>
             <Link to='/programmes'>
               <button className="btn">Програми</button>
@@ -78,47 +80,58 @@ const About = () => {
       <div className="testimony container section-space">
         <h1 className='l-text'>Какво мислят хората за нас</h1>
         <div className="review-container">
-          <div className="arrow arrow-left" onClick={() => setCurrent(prev => {if(prev > 0) {return prev - 1 } else { return 2}})}>
+          <div className="arrow arrow-left" onClick={() => setCurrent(prev => {if(prev > 0) {return prev - 1 } else { return 3}})}>
             <IoIosArrowBack size={35}  />
           </div>
-          <div className="arrow arrow-right" onClick={() => setCurrent(prev => {if(prev >= 2) {return 0 } else { return prev + 1}})}>
+          <div className="arrow arrow-right" onClick={() => setCurrent(prev => {if(prev >= 3) {return 0 } else { return prev + 1}})}>
             <IoIosArrowForward size={35} />
           </div>
           <div className="review">
             <div className="orange-line"></div>
             <div className="name-image">
-              <img src={klara} alt="" style={{transform: `translateX(${-current * reviewWidth}px )`}}/>
+              <img src={stoinov} alt="" style={{transform: `translateX(${-current * reviewWidth}px )`}}/>
             </div>
-            <p className='opinion' style={{transform: `translateX(${-current * reviewWidth }px )`}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium debitis assumenda, cupiditate, vitae quisquam, qui recusandae corrupti laboriosam maiores ex deleniti ipsa ut voluptates placeat ea nulla harum sed numquam aliquid quidem nihil dolores illo exercitationem iusto. Voluptate ut quaerat veritatis ipsum reprehenderit debitis eum, quia iusto modi magnam soluta fugit dolorum tempora eveniet beatae, quos consequuntur, deleniti pariatur asperiores.</p>
-            <div className="line"></div>
-            <p className='name text' style={{transform: `translateX(${-current * reviewWidth}px )`}}>Иван Петров</p>
+            <p className='opinion' style={{transform: `translateX(${-current * reviewWidth }px )`}}>На школа ВИЗИОН дължа факта, че още на първия кастинг, на който ме изпратиха и на който се явих с монолог,подготвен от ВИЗИОН, ми предложиха роля във филма на Нил Маршъл Hellboy. Щастлива съм, че даже успях да си озвуча текста на английски, благодарение на това, че ВИЗИОН е една от малкото школи в България, които подготвят възпитаниците си на няколко езика - в случая, те ме подготвиха за кастинг на български и на английски.</p>
+            <div className="line" style={{transform: `translateX(${-current * reviewWidth}px )`}}></div>
+            <p className='name text' style={{transform: `translateX(${-current * reviewWidth}px )`}}>Юлия Давидова</p>
             <p className='job' style={{transform: `translateX(${-current * reviewWidth}px )`}}>Възпитанк на Визион</p>
           </div>
           <div className="review">
             <div className="orange-line"></div>
             <div className="name-image">
-              <img src={klara} alt="" style={{transform: `translateX(${-current * reviewWidth + reviewWidth}px )`}}/>
+              <img src={stoinov} alt="" style={{transform: `translateX(${-current * reviewWidth + reviewWidth}px )`}}/>
             </div>
-            <p className='opinion' style={{transform: `translateX(${-current * reviewWidth + reviewWidth}px )`}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium debitis assumenda, cupiditate, vitae quisquam, qui recusandae corrupti laboriosam maiores ex deleniti ipsa ut voluptates placeat ea nulla harum sed numquam aliquid quidem nihil dolores illo exercitationem iusto. Voluptate ut quaerat veritatis ipsum reprehenderit debitis eum, quia iusto modi magnam soluta fugit dolorum tempora eveniet beatae, quos consequuntur, deleniti pariatur asperiores.</p>
-            <div className="line"></div>
-            <p className='name text'  style={{transform: `translateX(${-current * reviewWidth + reviewWidth}px )`}}>Иван Петров</p>
+            <p className='opinion' style={{transform: `translateX(${-current * reviewWidth + reviewWidth}px )`}}>За мен беше щастие да мина трейнинг по Актьорско майсторство и Презентерски сръчности във ВИЗИОН. Обучението ми помогна изключително много за моите адвокатски пледоарии. Курсът на ВИЗИОН е много приятен, интересен,и полезен не само за бъдещите актьори, но и за всеки човек, който иска да усъвършенства своите комуникационни умения.</p>
+            <div className="line" style={{transform: `translateX(${-current * reviewWidth + reviewWidth}px )`}}></div>
+            <p className='name text'  style={{transform: `translateX(${-current * reviewWidth + reviewWidth}px )`}}>Александър Янкулов</p>
             <p className='job'  style={{transform: `translateX(${-current * reviewWidth + reviewWidth}px )`}}>Възпитанк на Визион</p>
           </div>
           <div className="review">
             <div className="orange-line"></div>
             <div className="name-image">
-              <img src={klara} alt="" style={{transform: `translateX(${-current * reviewWidth + reviewWidth * 2}px )`}}/>
+              <img src={stoinov} alt="" style={{transform: `translateX(${-current * reviewWidth + reviewWidth * 2}px )`}}/>
             </div>
-            <p className='opinion' style={{transform: `translateX(${-current * reviewWidth + reviewWidth  * 2}px )`}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium debitis assumenda, cupiditate, vitae quisquam, qui recusandae corrupti laboriosam maiores ex deleniti ipsa ut voluptates placeat ea nulla harum sed numquam aliquid quidem nihil dolores illo exercitationem iusto. Voluptate ut quaerat veritatis ipsum reprehenderit debitis eum, quia iusto modi magnam soluta fugit dolorum tempora eveniet beatae, quos consequuntur, deleniti pariatur asperiores.</p>
-            <div className="line"></div>
-            <p className='name text'  style={{transform: `translateX(${-current * reviewWidth + reviewWidth * 2}px )`}}>Иван Петров</p>
+            <p className='opinion' style={{transform: `translateX(${-current * reviewWidth + reviewWidth  * 2}px )`}}>Курсът на ВИЗИОН е огромно удоволствие и дава на участниците си преимуществото да развият и усъвършенстват високо ефективни умения в областта на публичната реч.</p>
+            <div className="line" style={{transform: `translateX(${-current * reviewWidth + reviewWidth * 2}px )`}}></div>
+            <p className='name text'  style={{transform: `translateX(${-current * reviewWidth + reviewWidth * 2}px )`}}>Лилия Иванова</p>
             <p className='job'  style={{transform: `translateX(${-current * reviewWidth + reviewWidth * 2}px )`}}>Възпитанк на Визион</p>
+          </div>
+          <div className="review">
+            <div className="orange-line"></div>
+            <div className="name-image">
+              <img src={stoinov} alt="" style={{transform: `translateX(${-current * reviewWidth + reviewWidth * 3}px )`}}/>
+            </div>
+            <p className='opinion' style={{transform: `translateX(${-current * reviewWidth + reviewWidth  * 3}px )`}}>Искам сърдечно да благодаря на един много специален за мен човек, който видя потенциала в мен дори когато никой друг все още не го беше забелязал: това е Клара Армандова, режисьор и педагог. Тя ми даде този заряд да играя и да пиша. Тя ме вдъхнови и научи на всичко, което знам за театъра и за изкуството като цяло.</p>
+            <div className="line" style={{transform: `translateX(${-current * reviewWidth + reviewWidth * 3}px )`}}></div>
+            <p className='name text'  style={{transform: `translateX(${-current * reviewWidth + reviewWidth * 3}px )`}}> Александър Стойнов</p>
+            <p className='job'  style={{transform: `translateX(${-current * reviewWidth + reviewWidth * 3}px )`}}>Възпитанк на Визион</p>
           </div>
         </div>
         <div className="dots">
           <div onClick={() => setCurrent(0)} className={current == 0 ? "dot current-dot" : "dot"}></div>
           <div onClick={() => setCurrent(1)} className={current == 1 ? "dot current-dot" : "dot"}></div>
           <div onClick={() => setCurrent(2)} className={current == 2 ? "dot current-dot" : "dot"}></div>
+          <div onClick={() => setCurrent(3)} className={current == 3 ? "dot current-dot" : "dot"}></div>
         </div>
       </div>
     </div>

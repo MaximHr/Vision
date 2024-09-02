@@ -12,8 +12,9 @@ const Navbar = () => {
         <Link className={pathname.includes('/teachers') ? 'current' : ''} to='/teachers'>Преподаватли</Link>
         <Link className={pathname.includes('/programmes') ? 'current' : ''} to='/programmes'>Програми</Link>
         <Link className={pathname.includes('/events') ? 'current' : ''}  to='/events'>Събития</Link>
+        <Link className={pathname.includes('/achievements') ? 'current' : ''}  to='/achievements'>Постижения</Link>
       </ul>
-      <button className="btn">Свържи се</button>
+      <Link to='/contact'><button className="btn">Свържи се</button></Link>
     </nav>
   )
 }

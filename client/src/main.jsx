@@ -1,5 +1,6 @@
 import { createRoot } from 'react-dom/client'
 import './index.css';
+import './responsive.css';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -12,6 +13,8 @@ import Events from './Events';
 import Teachers from './Teachers';
 import Enroll from './Enroll';
 import Person from './Person';
+import Contact from './Contact';
+import Achievements from './Achievements';
 
 const router = createBrowserRouter([
   {
@@ -45,7 +48,15 @@ const router = createBrowserRouter([
       {
         path: '/enroll',
         element: <Enroll />
-      }
+      },
+      {
+        path: '/contact',
+        element: <Contact />
+      },
+      {
+        path: '/achievements',
+        element: <Achievements />
+      },
     ]
   },
 ]);

@@ -1,0 +1,192 @@
+@media only screen and (max-width: 1024px) {
+  .home {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .home .text {
+    max-width: 700px;
+  }
+  .home .images-container {
+    align-items: flex-start;
+  }
+  .row {
+    animation: none;
+    transform: translateX(0);
+  }
+  .row:nth-of-type(2) {   
+    animation: none;
+    transform: translateX(60px);
+  }
+  .contact-page {
+    gap: 3.5rem;
+    flex-direction: column;
+  }
+  .contact-info {
+    max-width: 800px;
+  }
+  .contact-box {
+    flex-direction: row;
+    width: 100%;
+    max-width: 800px;
+  }
+  .room {
+    flex: 1;
+  }
+  .section-home {
+    gap: 3rem;
+  }
+  
+  .contact-box {
+    display: grid;
+    gap: 2.2rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .section-home {
+    flex-direction: column-reverse;
+  }
+  .video {
+    max-width: 722px;
+    margin-left: 78px;
+  }
+  .section-details {
+    margin-left: 78px;
+    max-width: 800px;
+  }
+  .floating-svg {
+    top: 30px;
+  }
+  .title {
+    white-space: wrap;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  
+  .contact-box {
+    grid-template-columns: 1fr;
+  }
+  .row:nth-of-type(2) {   
+    animation: none;
+    transform: translateX(-20px);
+  }
+  .action-section h1 {
+    margin-top: 1.5rem;
+  }
+  .text {
+    width: 95%;
+    font-size: 1.1rem;
+  }
+  .l-text, .title {
+    font-size: 2.75rem;
+  }
+  .floating-svg:nth-of-type(2) {
+    top: 35px;
+  }
+  .video {
+    margin-left: 0;
+  }
+  .section-details {
+    margin-left: 0px;
+  }
+  .stripes {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .images-container {
+    display: none; 
+  }
+  .marque {
+    display: block;
+  }
+  .img-container {
+    margin-right: 2rem;
+    width: 250px;
+    height: 130px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  .text {
+    width: 100%;
+  }
+  .l-text {
+    font-size: 2.5rem;
+  }
+  .form div {
+    flex-direction: column;
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+
+}
+@media only screen and (max-width: 480px) {
+  
+  .img-container {
+    margin-right: 1.5rem;
+  }
+  .btn-hero {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+  }
+  .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .contact-box {
+    padding: 2rem;
+  }
+  .section-details h1 {
+    font-size: 2.25rem;
+  }
+  .section-details p {
+    font-size: 1rem;
+  }
+  .room h2 {
+    font-size: 1.25rem;
+  }
+  .room svg {
+    width: 20px;
+  }
+  .room p, .room a {
+    font-size: 0.9rem;
+  }
+  input {
+    font-size: 0.95rem;
+  }
+  .video {
+    width: 98vw;
+    transform: translateX(-1.5rem);
+  }
+  .btn-submit, .section-details button, .action-section .btn {
+    font-size: 1rem;
+  }
+  .btn-container .btn, .btn-container a {
+    width: 100%;
+  }
+  .btn-container {
+    max-width: 100%;
+    flex-direction: column;
+  }
+  .text {
+    font-size: 1rem;
+  }
+  .l-text {
+    font-size: 2.25rem;
+  }
+  .contact-page .title {
+    white-space: wrap;
+  }
+  .footer p {
+    font-size: 0.9rem;
+  }
+}

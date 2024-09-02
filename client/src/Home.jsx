@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Marquee from "react-fast-marquee";
 import pic1 from './assets/pic.png'
 import pic2 from './assets/pic2.png'
 import pic3 from './assets/pic3.png'
@@ -72,6 +73,39 @@ const Home = () => {
               <img  style={{transform: 'translateY(-45px)'}} src={pic9} alt="Упражнение" />
             </div>
           </div>
+        </div>
+        <div className="marque">
+          <Marquee speed={200} pauseOnHover={true}>
+            
+            <div className="img-container">
+              <img src={pic1} alt="Упражнение" />
+            </div>
+            <div className="img-container">
+              <img src={pic2} alt="Упражнение" />
+            </div>
+            <div className="img-container">
+              <img src={pic7} alt="Упражнение" />
+            </div>
+            
+            <div className="img-container">
+              <img src={pic6} alt="Упражнение" />
+            </div>
+            <div className="img-container">
+              <img src={pic3} alt="Упражнение" />
+            </div>
+            <div className="img-container">
+              <img src={pic8} alt="Упражнение" />
+            </div>
+            <div className="img-container" >
+              <img src={pic4} alt="Упражнение"  style={{transform: 'translateY(-40px)'}} />
+            </div>
+            <div className="img-container">
+              <img src={pic5} alt="Упражнение" />
+            </div>
+            <div className="img-container">
+              <img  style={{transform: 'translateY(-45px)'}} src={pic9} alt="Упражнение" />
+            </div>
+          </Marquee>
         </div>
       </div>
       <div className="section-home container section-space">

@@ -1,0 +1,9 @@
+-> 'Нашите успехи' page ?
+
+-> responsive design
+-> 'събития' page
+-> 'отзиви' снимки
+-> галерия
+-> send email
+-> admin page for klara
+-> SEO
