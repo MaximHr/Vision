@@ -1,4 +1,90 @@
+@media only screen and (max-width: 1200px) {
+  .event-details-page {
+    flex-direction: column;
+  }
+  .event-details-page img {
+    max-width: 600px;
+  }
+  .nav-l {
+    display: none !important;
+  }
+  .nav-small {
+    display: inline-block;
+  }
+  .navbar {
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  .hamburger {
+    margin: 5px 0;
+    display: flex;
+  }
+  .boxes, .steps, .teacher-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .first-section {
+    flex-direction: column;
+  }
+  .first-section .text {
+    width: 90%;
+  }
+  .steps {
+    gap: 2.5rem;
+  }
+  .arrow-right { 
+    right: -70px;
+  }
+  .arrow-left { 
+    left: -70px;
+  }
+  .dash-line {
+    display: none;
+  }
+  .idgaf, .programmes-page {
+    flex-direction: column;
+  }
+  .programa-img {
+    justify-content: flex-start;
+    width: 400px;
+    max-width: 100%;
+  }
+  .programa-img img {
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
+  .person {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .arrow {
+    background-color: #e04826;
+    top: auto;
+    bottom: 0px;
+  }
+  .arrow:hover {
+    background-color: var(--primary-color);
+  }
+  .arrow svg {
+    fill: white;
+  }
+  .arrow-right { 
+    right: 50px;
+  }
+  .arrow-left { 
+    left: 50px;
+  }
+  .about-us {
+    justify-content: space-between;
+    gap: 3rem;
+  }
+  .about-us .text {
+    width: 100%;
+  }
   .home {
     flex-direction: column;
     gap: 3rem;
@@ -44,6 +130,15 @@
 }
 
 @media only screen and (max-width: 1000px) {
+  .text-terms {
+    width: 95%;
+  }
+  .review-container {
+    height: 450px;
+  }
+  .review .opinion {
+    height: 500px;
+  }
   .section-home {
     flex-direction: column-reverse;
   }
@@ -63,9 +158,42 @@
   }
 }
 
+@media only screen and (max-width: 900px) {
+  .about-us {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .about-us .text {
+    max-width: 600px;
+  }
+}
 @media only screen and (max-width: 768px) {
-  
-  .contact-box {
+  .first-section .btn {
+    padding: 1rem 2.8rem;
+  }
+  .first-section .text {
+    width: 100%;
+  }
+  .section-programmes .programmes-details {
+    max-width: 100%;
+  }
+  .person p {
+    font-size: 1.2rem;
+  }
+  .review-container {
+    height: 500px;
+  }
+  .steps {
+    gap: 3.5rem;
+  }
+  .dash-line {
+    display: block;
+    height: 800px;
+    width: 4px;
+    top: 0;
+    left: 50%;
+  }
+  .boxes, .steps , .teacher-cards , .contact-box {
     grid-template-columns: 1fr;
   }
   .row:nth-of-type(2) {   
@@ -100,6 +228,14 @@
   .images-container {
     display: none; 
   }
+  .first-section .btn-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .first-section .btn {
+    justify-content: center;
+    text-align: center;
+  }
   .marque {
     display: block;
   }
@@ -111,6 +247,21 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .person-img img {
+    height: auto;
+    width: 350px;
+    max-width: 100%;
+  }
+  .person p {
+    font-size: 1.1rem;
+  }
+  .btn-cv {
+    font-size: 1.1rem;
+    padding: 1rem 3rem;
+  }
+  .review-container {
+    height: 590px;
+  }
   .title {
     font-size: 2.5rem;
   }
@@ -125,12 +276,120 @@
   }
 }
 
-
-@media only screen and (max-width: 500px) {
-
-}
 @media only screen and (max-width: 480px) {
-  
+  .event-details-page .pill {
+    font-size: 0.9rem;
+  }
+  .about-us .btn-container a{
+    width: 180px;
+    display: flex;
+  }
+  .about-us .btn-container a button {
+    align-self: stretch;
+    width: 100%;
+  }
+  .about-us .btn-container {
+    align-items: flex-start;
+  }
+  .grid {
+    justify-items: center;
+    gap: 2.5rem;
+  }
+  .grid h1 {
+    font-size: 1.4rem;
+    margin-bottom: 1.1rem;
+  }
+  .programa {
+    width: 325px;
+    min-height: 250px;
+    padding: 1.5rem;
+  }
+  .event {
+    width: 300px;
+    max-width: 100%;
+  }
+  .event-img {
+    max-width: 100%;
+    width: 300px;
+  }
+  .event-title {
+    font-size: 1.4rem;
+  }
+  .teacher-img {
+    width: 200px;
+    height: 220px;
+  }
+  .teacher-content {
+    width: 200px;
+  }
+  .teacher-card {
+    width: 300px;
+    max-width: 90vw;
+  }
+  .teacher-card .pill {
+    font-size: 0.9rem;
+    padding: 0.7rem 2.2rem;
+  }
+  .teacher-content h1 {
+    font-size: 1.5rem;
+  }
+  .more-teacher {
+    margin-top: 1rem !important;
+    font-size: 1.1rem;
+  }
+  .enroll-page .pill {
+    font-size: 0.9rem;
+    padding: 1rem 1.75rem;
+  }
+  .random-svg {
+    width: 200px;
+    height: 200px;
+  }
+  .review .opinion {
+    font-size: 1rem;
+    line-height: 145%;
+  }
+  .name-image {
+    width: 75px;
+    height: 75px;
+    margin-bottom: 0.75rem;
+  }
+  .arrow-right {
+    right: 20px;
+  }
+  .arrow-left {
+    left: 20px;
+  }
+  .job {
+    font-size: 0.9rem;
+  }
+  .step h3 {
+    font-size: 1.4rem;
+  }
+  .step li, .step p {
+    font-size: 1rem;
+  }
+  .arrow {
+    width: 39px;
+    bottom: 5px;
+    height: 39px;
+  }
+  .arrow svg {
+    height: 26px;
+    width: 26px;
+  }
+  .box {
+    width: 300px;
+    position: relative;
+    z-index: 4;
+  }
+  .about-us img {
+    width: 100%;
+    height: auto;
+  }
+  .special-btn {
+    font-size: 0.9rem;
+  }
   .img-container {
     margin-right: 1.5rem;
   }
@@ -188,5 +447,12 @@
   }
   .footer p {
     font-size: 0.9rem;
+  }
+  
+  .review-container {
+    height: 620px;
+  }
+  .boxes {
+    gap: 2rem;
   }
 }

@@ -4,6 +4,9 @@ import about_us from './assets/about_us.jpg';
 import { Link } from 'react-router-dom';
 import stoinov from './assets/stoinov.jpg';
 import { IoIosArrowBack } from "react-icons/io";
+import liliq from './assets/liliq.webp';
+import { RiDoubleQuotesL } from "react-icons/ri";
+import qnko from './assets/AlexanderYankulov.jpg';
 import { IoIosArrowForward } from "react-icons/io";
 
 const About = () => {
@@ -88,8 +91,8 @@ const About = () => {
           </div>
           <div className="review">
             <div className="orange-line"></div>
-            <div className="name-image">
-              <img src={stoinov} alt="" style={{transform: `translateX(${-current * reviewWidth}px )`}}/>
+            <div className="name-image" style={{transform: `translateX(${-current * reviewWidth}px )`}}>
+              <RiDoubleQuotesL/>
             </div>
             <p className='opinion' style={{transform: `translateX(${-current * reviewWidth }px )`}}>На школа ВИЗИОН дължа факта, че още на първия кастинг, на който ме изпратиха и на който се явих с монолог,подготвен от ВИЗИОН, ми предложиха роля във филма на Нил Маршъл Hellboy. Щастлива съм, че даже успях да си озвуча текста на английски, благодарение на това, че ВИЗИОН е една от малкото школи в България, които подготвят възпитаниците си на няколко езика - в случая, те ме подготвиха за кастинг на български и на английски.</p>
             <div className="line" style={{transform: `translateX(${-current * reviewWidth}px )`}}></div>
@@ -99,7 +102,7 @@ const About = () => {
           <div className="review">
             <div className="orange-line"></div>
             <div className="name-image">
-              <img src={stoinov} alt="" style={{transform: `translateX(${-current * reviewWidth + reviewWidth}px )`}}/>
+              <img src={qnko} alt="" style={{transform: `translateX(${-current * reviewWidth + reviewWidth}px )`}}/>
             </div>
             <p className='opinion' style={{transform: `translateX(${-current * reviewWidth + reviewWidth}px )`}}>За мен беше щастие да мина трейнинг по Актьорско майсторство и Презентерски сръчности във ВИЗИОН. Обучението ми помогна изключително много за моите адвокатски пледоарии. Курсът на ВИЗИОН е много приятен, интересен,и полезен не само за бъдещите актьори, но и за всеки човек, който иска да усъвършенства своите комуникационни умения.</p>
             <div className="line" style={{transform: `translateX(${-current * reviewWidth + reviewWidth}px )`}}></div>
@@ -109,7 +112,7 @@ const About = () => {
           <div className="review">
             <div className="orange-line"></div>
             <div className="name-image">
-              <img src={stoinov} alt="" style={{transform: `translateX(${-current * reviewWidth + reviewWidth * 2}px )`}}/>
+              <img src={liliq} alt="" style={{transform: `translateX(${-current * reviewWidth + reviewWidth * 2}px )`}}/>
             </div>
             <p className='opinion' style={{transform: `translateX(${-current * reviewWidth + reviewWidth  * 2}px )`}}>Курсът на ВИЗИОН е огромно удоволствие и дава на участниците си преимуществото да развият и усъвършенстват високо ефективни умения в областта на публичната реч.</p>
             <div className="line" style={{transform: `translateX(${-current * reviewWidth + reviewWidth * 2}px )`}}></div>

@@ -14,7 +14,15 @@ import Teachers from './Teachers';
 import Enroll from './Enroll';
 import Person from './Person';
 import Contact from './Contact';
+
+
 import Achievements from './Achievements';
+import LogIn from './LogIn';
+import Admin from './Admin';
+import AdminRoot from './AdminRoot';
+import AddEvent from './AddEvent';
+import EventDetails from './EventDetails';
+import Success from './Success';
 
 const router = createBrowserRouter([
   {
@@ -38,6 +46,10 @@ const router = createBrowserRouter([
         element: <Events />
       },
       {
+        path: '/events/:id',
+        element: <EventDetails />
+      },
+      {
         path: '/teachers',
         element: <Teachers />
       },
@@ -50,6 +62,10 @@ const router = createBrowserRouter([
         element: <Enroll />
       },
       {
+        path: '/success',
+        element: <Success />
+      },
+      {
         path: '/contact',
         element: <Contact />
       },
@@ -58,7 +74,24 @@ const router = createBrowserRouter([
         element: <Achievements />
       },
     ]
-  },
+  }, {
+    path:'/admin',
+    element: <AdminRoot /> ,
+    children: [
+      {
+        path: 'home',
+        element: <Admin />
+      },
+      {
+        path: '',
+        element: <LogIn />
+      },
+      {
+        path: 'add-event',
+        element: <AddEvent />
+      },
+    ]
+  }
 ]);
 
 createRoot(document.getElementById('root')).render(
