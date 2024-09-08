@@ -4,6 +4,7 @@ import { FaPhoneAlt, FaPaperPlane } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import {Helmet} from "react-helmet";
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -23,6 +24,9 @@ const Contact = () => {
   }
   return (
     <div className="contacts">
+      <Helmet>
+        <title>Визион | Контакти</title>
+      </Helmet>
       <ToastContainer />
       <div className='contact-page section-space container'>
         <div className="contact-info">

@@ -8,6 +8,7 @@ import liliq from './assets/liliq.webp';
 import { RiDoubleQuotesL } from "react-icons/ri";
 import qnko from './assets/AlexanderYankulov.jpg';
 import { IoIosArrowForward } from "react-icons/io";
+import {Helmet} from "react-helmet";
 
 const About = () => {
   const ref = useRef(null);
@@ -20,6 +21,9 @@ const About = () => {
 
   return (
     <div className='about-page'>
+      <Helmet>
+        <title>Визион | За нас</title>
+      </Helmet>
       <div className="about-us container section-space">
         <motion.div initial={{x: -150, scale: 0}}  animate={{scale: 1}} transition={{duration: 0.4, delay: 0.1}} className="circle"></motion.div>
         <article  >

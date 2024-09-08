@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import supabase from './CreateClient';
 import parse from 'html-react-parser';
 import { ToastContainer, toast } from 'react-toastify';
+import {Helmet} from "react-helmet";
 
 const EventDetails = () => {
   const {id} = useParams();
@@ -44,6 +45,9 @@ const EventDetails = () => {
 
   return (
     <div className='event-details-page container section-space'>
+      <Helmet>
+        <title>Визион | {`${event?.title}`}</title>
+      </Helmet>
       <ToastContainer />
       {
         event && (<>

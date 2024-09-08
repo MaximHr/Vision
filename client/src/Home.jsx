@@ -14,7 +14,7 @@ import blob from './assets/blob.svg'
 import video from './assets/video_dancing.mp4'
 import poster from './assets/tarifata.png';
 import drama from './assets/drama.svg'
-import cinema from './assets/cinema.svg'
+import cinema from './assets/cinema.svg';
 
 const Home = () => {
 

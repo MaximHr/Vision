@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import supabase from './CreateClient';
 import Card from './Card';
+import {Helmet} from "react-helmet";
 
 const Events = () => {
   const [events, setEvents] = useState([]);
@@ -20,6 +21,10 @@ const Events = () => {
 
   return (
     <div className='events-page container section-space'>
+      
+      <Helmet>
+        <title>Визион | Събития</title>
+      </Helmet>
       <h1 className='l-text'>Събития</h1>
       <div className="event-grid">
         {events.map(event => <Card key={event.uuid} event={event}/>)}

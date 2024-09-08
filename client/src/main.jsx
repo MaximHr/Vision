@@ -14,8 +14,6 @@ import Teachers from './Teachers';
 import Enroll from './Enroll';
 import Person from './Person';
 import Contact from './Contact';
-
-
 import Achievements from './Achievements';
 import LogIn from './LogIn';
 import Admin from './Admin';
@@ -23,11 +21,13 @@ import AdminRoot from './AdminRoot';
 import AddEvent from './AddEvent';
 import EventDetails from './EventDetails';
 import Success from './Success';
+import NotFound from './NotFound';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
+    errorElement: <NotFound />,
     children: [
       {
         path: '/programmes',

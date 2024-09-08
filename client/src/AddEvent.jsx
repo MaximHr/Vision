@@ -94,7 +94,7 @@ const AddEvent = () => {
         </Flex>
         <Flex direction='column' mt='8' gap='4'>
           <Text size='5'>Цена на билет</Text>
-          <Text size='3'>(Ако го оставиш на 0 или празно, няма да има опция за купуване на билет)</Text>
+          <Text size='3'>(Ако го оставиш на 0, няма да има опция за купуване на билет)</Text>
           <TextField.Root 
             type='number' 
             placeholder='Цена'
@@ -102,28 +102,6 @@ const AddEvent = () => {
             value={price}
             onChange={(e) => setPrice(e.target.value)}
           ></TextField.Root>
-        </Flex>
-        
-        <Flex direction='column' mt='8' gap='4'>
-          <Text size='5'>Дата на събитието</Text>
-          <TextField.Root 
-            type='date' 
-            style={{maxWidth: '450px', height: '35px'}}
-            value={date}
-            onChange={(e) => setDate(e.target.value)}
-          ></TextField.Root>
-        </Flex>
-        <Flex direction='column' mt='8' gap='4'>
-          <Text size='5'>Подробна информация</Text>
-          <EditorToolbar />
-          <ReactQuill
-            theme="snow"
-            value={details}
-            onChange={setDetails}
-            placeholder={"Напиши повече информация за събитието"}
-            modules={modules}
-            formats={formats}
-          />
         </Flex>
         <Flex direction='column' mt='8' gap='4'>
           <Text size='5'>Прикачи снимка</Text>
@@ -144,10 +122,32 @@ const AddEvent = () => {
             onChange={(e) => setSubTitle(e.target.value)}
           ></TextField.Root>
         </Flex>
-        
-        <div style={{pointerEvents: 'none', marginTop: '4rem', display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr'}}>
+        <Flex direction='column' mt='8' gap='4'>
+          <Text size='5'>Дата на събитието</Text>
+          <TextField.Root 
+            type='date' 
+            style={{maxWidth: '450px', height: '35px'}}
+            value={date}
+            onChange={(e) => setDate(e.target.value)}
+          ></TextField.Root>
+        </Flex>
+        <Text size='5' mb='4' style={{ marginTop: '3rem'}}>Предварителен преглед:</Text>
+        <div style={{pointerEvents: 'none', display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr'}}>
           <Card event={{subtitle: subTitle, date:date, price: price, title: title, image_url: image}}/>
         </div>
+        <Flex direction='column' mt='8' gap='4'>
+          <Text size='5'>Подробна информация</Text>
+          <EditorToolbar />
+          <ReactQuill
+            theme="snow"
+            value={details}
+            onChange={setDetails}
+            placeholder={"Напиши повече информация за събитието"}
+            modules={modules}
+            formats={formats}
+          />
+        </Flex>
+
         <Button 
           mt='9' 
           size='4' 

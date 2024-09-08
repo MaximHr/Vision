@@ -8,6 +8,7 @@ import tickOrg from "./assets/tick-orange.svg";
 import { FaArrowDown } from "react-icons/fa";
 import { BsStars } from "react-icons/bs";
 import programa2 from './assets/programa.png';
+import {Helmet} from "react-helmet";
 
 const Program = () => {
   const ref = useRef();
@@ -18,6 +19,9 @@ const Program = () => {
 
   return (
     <div className='programmes-page'>
+      <Helmet>
+        <title>Програми</title>
+      </Helmet>
       <div className="first-section section-space container">
         <div className="first-section-info">
           <TypeAnimation

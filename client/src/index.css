@@ -1355,7 +1355,7 @@ strong {
   border: none;
   padding: 0.75rem 2.25rem;
 }
-.success-page {
+.success-page, .notfound-page {
   background-color: var(--bg-color);
   display: flex;
   flex-direction: column;
@@ -1364,4 +1364,93 @@ strong {
   align-items: center;
   padding-top: 4rem;
   gap: 1.5rem;
+}
+.not-found {
+  font-weight: 800;
+  font-family: 'Inter';
+  font-size: 7.5rem;
+}
+.notfound-page {
+  min-height: 100vh;
+}
+.notfound-page .text {
+  font-size: 1.75rem;
+}
+.achievements-flex {
+  flex-direction: row-reverse;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #f5f9fc;
+}
+.achievements-page {
+  padding-top: 4rem;
+}
+.achievements-page .stripes {
+  left: 75px;
+}
+.achievements-flex .stripes {
+  left: calc(100% - 140px);
+}
+.achievements-page, .achievements-flex {
+  gap: 4rem;
+  padding-bottom: 5rem;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+.video-container {
+  position: relative;
+  z-index: 3;
+  flex: 1;
+}
+
+.achievements-section .text{
+  width: 100%;
+  margin-top: 1rem;
+}
+.achievements{
+  
+  padding-bottom: 0;
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+}
+.achievements-section {
+  flex: 1;
+}
+.youtube-video {
+  width: auto !important;
+  height: auto !important;
+  aspect-ratio: 16/9;
+  border: 10px solid #ffcfc5;
+}
+.medals {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.achievements .medals{
+  flex: 1;
+}
+.achievements .video-container { 
+  flex: 1;
+}
+.achievements .medals .text {
+  width: 100%;
+}
+
+.medals .text {
+  transition: all 1.25s ease;
+}
+
+.medals .text:nth-of-type(2) {
+  transition-delay: 0.25s;
+}
+.medals .text:nth-of-type(3) {
+  transition-delay: 0.5s;
+}
+.medal {
+  font-size: 1.5rem;
+  display: inline-block;
 }

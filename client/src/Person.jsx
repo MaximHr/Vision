@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import klara from './assets/klara-teachers.jpg';
 import velichko from './assets/velichko.jpg'
 import desislava from './assets/desislava.jpg';
-
+import { Helmet } from 'react-helmet';
 const Person = () => {
   const {person} = useParams();
   const [current, setCurrent] = useState(0);
@@ -26,6 +26,10 @@ const Person = () => {
   
   return (
     <div className='teacher-info section-space container'>
+      
+      <Helmet>
+        <title>Визион | Преподаватели</title>
+      </Helmet>
       <div className="donuts"></div>
       <div className="donuts"></div>
       {

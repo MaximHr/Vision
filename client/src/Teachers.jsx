@@ -4,10 +4,14 @@ import velichko from './assets/velichko.jpg'
 import desislava from './assets/desislava.jpg';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import {Helmet} from "react-helmet";
 
 const Teachers = () => {
   return (
     <div className='teachers-page'>
+      <Helmet>
+        <title>Визион | Преподаватели</title>
+      </Helmet>
       <div className="section-teachers section-space container">
         <h1 className='l-text'>Преподаватели</h1>
         {/* <div className="pill">We are the best</div> */}

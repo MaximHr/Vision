@@ -1,10 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import {motion} from 'framer-motion';
+import { Helmet } from 'react-helmet';
 
 const Enroll = () => {
   return (
     <div className="register-me">
+      <Helmet>
+        <title>Визион | Кастинг</title>
+      </Helmet>
       <div className='enroll-page section-space container'>
         <motion.div initial={{x: 150, y:-150, scale: 0}} animate={{ scale: 1}} transition={{ delay:0.1, duration: 0.4}} className="random-svg"></motion.div>
         <div className="pill">Есенен Семестър</div>
