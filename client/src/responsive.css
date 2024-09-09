@@ -56,6 +56,18 @@
   }
 }
 
+@media only screen and (max-width: 1100px) {
+  .achievements-page, .achievements-flex {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+  .achievements-page .stripes, .achievements-flex .stripes {
+    left: 870px;
+  }
+  .video-container, .achievements-section, .medals  {
+    max-width: 800px;
+  }
+}
 @media only screen and (max-width: 1024px) {
   .person {
     flex-direction: column;
@@ -251,6 +263,9 @@
     height: auto;
     width: 350px;
     max-width: 100%;
+  }
+  .medals {
+    gap: 1.5rem;
   }
   .person p {
     font-size: 1.1rem;
